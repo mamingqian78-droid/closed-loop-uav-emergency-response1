@@ -1,0 +1,5 @@
+extends: default.yaml
+experiment:
+  family: algorithmic_baseline
+  id: B1
+  policy: random

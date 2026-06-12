@@ -1,0 +1,7 @@
+extends: default.yaml
+experiment:
+  family: closed_loop_ablation
+  id: C0
+  policy: static_heuristic
+  mode: C1
+  description: Static initial observation with greedy dispatch.

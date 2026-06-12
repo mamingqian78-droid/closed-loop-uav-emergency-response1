@@ -1,0 +1,5 @@
+extends: default.yaml
+experiment:
+  family: reward_ablation
+  id: high_coverage
+reward_weights: [2.0, 1.0, 1.0]

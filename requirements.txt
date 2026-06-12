@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+pillow
+pyyaml
+tqdm
+gymnasium
+stable-baselines3
+sb3-contrib
+ultralytics
+torch
+tensorboard

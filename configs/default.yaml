@@ -1,0 +1,47 @@
+mode: final_real_adjusted
+project_root: ../..
+dataset_dir: ../../data/aiderv2
+results_dir: ../../paper_results_final
+source_detection_dir:
+
+random_seed: 42
+train_seeds: [1, 2, 3]
+eval_seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+
+yolo:
+  run_name: yolo_operational
+  model: yolov8n-cls.pt
+  epochs: 1
+  imgsz: 96
+  batch: 32
+  workers: 0
+  device: 0
+  patience: 100
+  confidence_threshold: 0.74
+
+rl:
+  grid_size: 32
+  real_targets: 18
+  decoy_targets: 24
+  horizon: 450
+  update_period: 5
+  total_timesteps: 140000
+  eval_episodes_per_seed: 10
+  sensitivity_episodes_per_seed: 8
+  learning_rate: 0.0003
+  n_steps: 512
+  batch_size: 128
+  gamma: 0.985
+  reward_settings:
+    Full: [1.0, 1.0, 1.0]
+    w/o coverage: [0.0, 1.0, 1.0]
+    w/o latency: [1.0, 0.0, 1.0]
+    w/o energy: [1.0, 1.0, 0.0]
+    low all: [0.5, 0.5, 0.5]
+    high coverage: [2.0, 1.0, 1.0]
+    high latency: [1.0, 2.0, 1.0]
+    high energy: [1.0, 1.0, 2.0]
+
+figures:
+  dpi: 600
+  font: Arial

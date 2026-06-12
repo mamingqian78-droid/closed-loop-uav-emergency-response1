@@ -1,0 +1,9 @@
+extends: default.yaml
+experiment:
+  family: closed_loop_ablation
+  id: C4
+  policy: PPO
+  mode: C4
+  update_interval: 1
+  dssm_access: true
+  description: Full closed-loop perception-state-policy update.

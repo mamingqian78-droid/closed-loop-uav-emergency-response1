@@ -1,0 +1,5 @@
+extends: default.yaml
+experiment:
+  family: algorithmic_baseline
+  id: B2
+  policy: greedy

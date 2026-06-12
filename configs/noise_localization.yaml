@@ -1,0 +1,5 @@
+extends: default.yaml
+experiment:
+  family: noise_robustness
+  noise_type: LOC
+noise_levels: [0, 1, 2, 4, 8]

@@ -1,0 +1,5 @@
+extends: default.yaml
+experiment:
+  family: reward_ablation
+  id: low_all
+reward_weights: [0.5, 0.5, 0.5]

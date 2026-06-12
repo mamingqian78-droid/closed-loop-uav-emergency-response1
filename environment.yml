@@ -1,0 +1,24 @@
+name: xj0432-uav
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - scikit-learn
+  - pillow
+  - pyyaml
+  - tqdm
+  - pytorch
+  - pip:
+      - gymnasium
+      - stable-baselines3
+      - sb3-contrib
+      - ultralytics
+      - tensorboard

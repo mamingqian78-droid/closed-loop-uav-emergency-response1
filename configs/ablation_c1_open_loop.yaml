@@ -1,0 +1,9 @@
+extends: default.yaml
+experiment:
+  family: closed_loop_ablation
+  id: C1
+  policy: PPO
+  mode: C1
+  update_interval: null
+  dssm_access: true
+  description: Open-loop PPO with stale initial observation.

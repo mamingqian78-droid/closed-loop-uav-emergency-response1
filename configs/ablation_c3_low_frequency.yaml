@@ -1,0 +1,11 @@
+extends: default.yaml
+experiment:
+  family: closed_loop_ablation
+  id: C3
+  policy: PPO
+  mode: C3
+  update_interval: 10
+  dssm_access: true
+  description: Low-frequency DSSM update.
+rl:
+  update_period: 10
